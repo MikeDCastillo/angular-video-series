@@ -1,2 +1,5 @@
-<!-- In order to see App Component we can use our CSS selector inside of our app component -->
-<app-hello-world>  </app-hello-world>
+{{title}} <!-- String Interpolation. aka mustache syntax -->
+            <!-- Can be used for template expressions. Example    Result is : {{1+1}} -->
+
+{{getMin(5, 3)}} <!-- Template Expression should not change application state -->
+                    <!-- Reading a value should not change other component values -->
