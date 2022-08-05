@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
- // @Input() childMessage: string;
-
+  @Input() childMessage!: string;
+  // @Output decorator is for when trying to send data from the child to the parent 
+    // for when buttons are clicked, form entries, other user events. needs EventEmitter
   constructor() { }
 
   ngOnInit(): void {
